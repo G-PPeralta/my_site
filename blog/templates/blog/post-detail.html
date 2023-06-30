@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %} 
+  This Post Title 
+{% endblock %} 
+
+{% block css_files %}
+  <link rel="stylesheet" href="{% static "blog/post-detail.css" %}" />
+{% endblock %}
+
+{% block content %}
+  <section id="summary">
+    <h2>Post Title</h2>
+    <article>
+      <img src={% static "blog/images/mountains.jpg" %} alt="Post Title" />
+      <address>By Gabriel</addres>
+        <div>
+          Last updated on <time>July 10th</time>
+        </div>
+    </article>
+  </section>
+
+  <main>
+    <p>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis, unde sapiente. Mollitia nisi incidunt, aut dolore ipsum harum distinctio alias optio error, culpa aperiam excepturi! Fugit eum animi magni aliquid!
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis, unde sapiente. Mollitia nisi incidunt, aut dolore ipsum harum distinctio alias optio error, culpa aperiam excepturi! Fugit eum animi magni aliquid!
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis, unde sapiente. Mollitia nisi incidunt, aut dolore ipsum harum distinctio alias optio error, culpa aperiam excepturi! Fugit eum animi magni aliquid!
+    </p>
+  </main>
+{% endblock %}
